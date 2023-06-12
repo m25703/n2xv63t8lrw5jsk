@@ -70,7 +70,7 @@ const styles = {
       position: 'absolute',
       top: '100%',
       left: 0,
-      fontSize: '8px',
+      fontSize: '12px',
       backgroundColor: '#333',
       listStyleType: 'none',
       padding: '1vw',
