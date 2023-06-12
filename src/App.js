@@ -7,7 +7,7 @@ const App = () => {
     <>
       <Navbar />
       <div className="app">
-        <h1>Flashcards</h1>
+        <h1>Ch. 6: Combustion and Flame</h1>
         <AnkiCarousel />
       </div>
     </>

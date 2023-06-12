@@ -5,17 +5,16 @@ import AnkiCard from './AnkiCard';
 
 const AnkiCarousel = () => {
 const flashcards = [
-  { question: "What does incomplete combustion of a fuel produce?", answer: "Poisonous carbon monoxide gas."},
+  { question: "What happens when magnesium burns in air?", answer: "It forms magnesium oxide and produces heat and light."},
+  { question: "What is produced when coal burns in air?", answer: "It produces carbon dioxide, heat, and light."},
+  { question: "What are the three different zones of a flame?", answer: "The dark zone, luminous zone, and non-luminous zone."},
   { question: "What is the impact of an increased percentage of carbon dioxide in the air?", answer: "It is linked to global warming."},
   { question: "What do oxides of sulphur and nitrogen produced by the burning of coal, diesel, and petrol cause?", answer: "Acid rain, which is harmful to crops, buildings, and soil."},
   { question: "What are some fuels used for various purposes at home, in industry, and for running automobiles?", answer: "Wood, coal, charcoal, petrol, diesel, compressed natural gas (CNG), etc."},
   { question: "What is the difference between the burning of a candle and the burning of a fuel like coal?", answer: "The burning of a candle produces a flame, whereas coal does not produce a flame."},
   { question: "What is combustion?", answer: "A chemical process in which a substance reacts with oxygen to give off heat."},
-  { question: "What happens when magnesium burns?", answer: "It forms magnesium oxide and produces heat and light."},
-  { question: "What is produced when coal burns in air?", answer: "It produces carbon dioxide, heat, and light."},
   { question: "Name some examples of combustible materials.", answer: "Wood, paper, straw, charcoal, matchsticks, and kerosene oil."},
   { question: "Name some examples of non-combustible materials.", answer: "Iron nails, stone, and glass."},
-  { question: "What are the three different zones of a flame?", answer: "The dark zone, luminous zone, and non-luminous zone."},
   { question: "What are substances that burn in air called?", answer: "Combustible"},
   { question: "What is given out during the process of combustion?", answer: "Heat and light are given out during combustion."},
   { question: "What is ignition temperature?", answer: "The lowest temperature at which a combustible substance catches fire."},
