@@ -10,9 +10,9 @@ const Navbar = () => {
   return (
     <nav style={styles.navbar}>
       <ul style={styles.navbarList}>
-        <li style={styles.navbarItem}><a href="/" style={styles.navbarLink}>Home</a></li> 
-        <li style={styles.navbarItem}><a href="/about" style={styles.navbarLink}>About</a></li>
-        <li style={styles.navbarItem}><a href="/createCard" style={styles.navbarLink}>Create Card</a></li>
+        <li style={styles.navbarItem}><a href="/" style={styles.navbarLink}>Home</a> &nbsp;&nbsp;&nbsp;&nbsp;</li> 
+        <li style={styles.navbarItem}><a href="/about" style={styles.navbarLink}>About</a> &nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li style={styles.navbarItem}><a href="/createCard" style={styles.navbarLink}>Create Card</a> &nbsp;&nbsp;&nbsp;&nbsp;</li>
         <li
           style={styles.navbarItem}
           onMouseEnter={handleDropdownToggle}
