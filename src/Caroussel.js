@@ -55,6 +55,7 @@ const Caroussel = ({ flashcards }) => {
       const shuffledRemaining = remainingFlashcards.sort(() => Math.random() - 0.5);
       const newCards = shuffledRemaining.slice(0, 5);
       newArray = [...newArray, ...newCards];
+      setArray(newArray);
     }
 
     setSelectedIndex(currentIndex+1);
@@ -79,6 +80,7 @@ const Caroussel = ({ flashcards }) => {
       const shuffledRemaining = remainingFlashcards.sort(() => Math.random() - 0.5);
       const newCards = shuffledRemaining.slice(0, 5);
       newArray = [...newArray, ...newCards];
+      setArray(newArray);
     }
 
     setSelectedIndex(currentIndex+1);
