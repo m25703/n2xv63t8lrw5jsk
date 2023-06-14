@@ -7,12 +7,32 @@ const Caroussel = ({ flashcards }) => {
   const [array, setArray] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const carouselRef = useRef(null);
+  const [difficultCards, setDifficultCards] = useState([]);
+  const [normalCards, setNormalCards] = useState([]);
+  const [newDifficultCards, setNewDifficultCards] = useState([]);
+  const [newNormalCards, setNewNormalCards] = useState([]);
 
   useEffect(() => {
     const shuffledItems = [...flashcards].sort(() => Math.random() - 0.5);
     const pickedItems = shuffledItems.slice(0, 15);
     setArray(pickedItems);
   }, [flashcards]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setArray(prevArray => [...prevArray, ...difficultCards]);
+      setDifficultCards([]);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [difficultCards]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setArray(prevArray => [...prevArray, ...normalCards]);
+      setNormalCards([]);
+    }, 12001);
+    return () => clearInterval(interval);
+  }, [normalCards]);
 
   const handleAddAfterCurrent1 = () => {
     // const currentIndx = carouselRef.current.state.selectedItem;
@@ -47,7 +67,14 @@ const Caroussel = ({ flashcards }) => {
     const currentData = array[currentIndx];
     const currentIndex = selectedIndex;
     let newArray = [...array];
-
+    setNewNormalCards([]);
+    if(!normalCards.includes(currentData)) {
+      setNewNormalCards(currentData);
+    }
+    if(newNormalCards.length!==0) {
+    setNormalCards([...normalCards,newNormalCards]);
+    }
+    console.log(normalCards);
     if (newArray.length < 10) {
       const remainingFlashcards = flashcards.filter(
         card => !newArray.includes(card)
@@ -59,11 +86,11 @@ const Caroussel = ({ flashcards }) => {
     }
 
     setSelectedIndex(currentIndex+1);
-    setTimeout(() => {
-      const newCurrentIndex = carouselRef.current.state.selectedItem;
-      newArray.splice(newCurrentIndex +1 , 0, currentData);
-      setArray(newArray);
-    }, 120000);
+    // setTimeout(() => {
+    //   const newCurrentIndex = carouselRef.current.state.selectedItem;
+    //   newArray.splice(newCurrentIndex +1 , 0, currentData);
+    //   setArray(newArray);
+    // }, 120000);
   };
 
   
@@ -72,7 +99,14 @@ const Caroussel = ({ flashcards }) => {
     const currentData = array[currentIndx];
     const currentIndex = selectedIndex;
     let newArray = [...array];
-
+    setNewDifficultCards([]);
+    if(!difficultCards.includes(currentData)) {
+      setNewDifficultCards(currentData);
+    }
+    if(newDifficultCards.length!==0) {
+      setDifficultCards([...difficultCards, newDifficultCards]);
+    }
+    console.log(difficultCards);
     if (newArray.length < 10) {
       const remainingFlashcards = flashcards.filter(
         card => !newArray.includes(card)
@@ -83,11 +117,11 @@ const Caroussel = ({ flashcards }) => {
       setArray(newArray);
     }
     setSelectedIndex(currentIndex+1);
-    setTimeout(() => {
-      const newCurrentIndex = carouselRef.current.state.selectedItem;
-      newArray.splice(newCurrentIndex +1 , 0, currentData);
-      setArray(newArray);
-    }, 30000);
+    // setTimeout(() => {
+    //   const newCurrentIndex = carouselRef.current.state.selectedItem;
+    //   newArray.splice(newCurrentIndex +1 , 0, currentData);
+    //   setArray(newArray);
+    // }, 30000);
   };
 
   return (
