@@ -22,7 +22,7 @@ const Caroussel = ({ flashcards }) => {
     const interval = setInterval(() => {
       setArray(prevArray => [...prevArray, ...difficultCards]);
       setDifficultCards([]);
-    }, 3000);
+    }, 30000);
     return () => clearInterval(interval);
   }, [difficultCards]);
 
@@ -30,7 +30,7 @@ const Caroussel = ({ flashcards }) => {
     const interval = setInterval(() => {
       setArray(prevArray => [...prevArray, ...normalCards]);
       setNormalCards([]);
-    }, 12001);
+    }, 120001);
     return () => clearInterval(interval);
   }, [normalCards]);
 
