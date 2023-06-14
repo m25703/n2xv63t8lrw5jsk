@@ -82,7 +82,6 @@ const Caroussel = ({ flashcards }) => {
       newArray = [...newArray, ...newCards];
       setArray(newArray);
     }
-
     setSelectedIndex(currentIndex+1);
     setTimeout(() => {
       const newCurrentIndex = carouselRef.current.state.selectedItem;
