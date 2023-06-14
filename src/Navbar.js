@@ -20,7 +20,7 @@ const Navbar = () => {
         >
           <a href="/chapters" style={styles.navbarLink}>Select Chapter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
           <ul style={{ ...styles.dropdown, display: isDropdownVisible ? 'block' : 'none', color:'white' }}>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter1">CROP PRODUCTION AND MANAGEMENT</a></li> <hline></hline>
+            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter1">CROP PRODUCTION AND MANAGEMENT</a></li>
             <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter2">MICROORGANISMS : FRIEND AND FOE </a></li>
             <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter3">COAL AND PETROLEUM</a></li>
             <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter4">COMBUSTION AND FLAME</a></li>
