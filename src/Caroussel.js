@@ -48,7 +48,7 @@ const Caroussel = ({ flashcards }) => {
     const currentIndex = selectedIndex;
     let newArray = [...array];
 
-    if (newArray.length < 5) {
+    if (newArray.length < 10) {
       const remainingFlashcards = flashcards.filter(
         card => !newArray.includes(card)
       );
@@ -73,7 +73,7 @@ const Caroussel = ({ flashcards }) => {
     const currentIndex = selectedIndex;
     let newArray = [...array];
 
-    if (newArray.length < 5) {
+    if (newArray.length < 10) {
       const remainingFlashcards = flashcards.filter(
         card => !newArray.includes(card)
       );
@@ -124,23 +124,21 @@ const Caroussel = ({ flashcards }) => {
       <div align='center' >
       <button onClick={handleAddAfterCurrent1} style={{
           backgroundColor:'#62ddbd',
-          borderRadius:'4px',
+          borderRadius:'0.33vw',
           borderStyle:'none',
           boxSizing:'border-box',
           color:'#fff',
           cursor:'pointer',
           display:'inline-block',
           fontfamily:'"Farfetch Basis","Helvetica Neue",Arial,sans-serif',
-          fontSize:'16px',
-          fontWeight:'700',
-          lineHeight:'1.5',
+          fontSize:'1.25vw',
+          fontWeight:'600',
           margin:'1vw',
-          maxWidth:'none',
-          minHeight:'44px',
-          minWidth:'10px',
+          minHeight:'3.66vw',
+          minWidth:'0.86vw',
           outline:'none',
           overflow:'hidden',
-          padding:'9px 20px 8px',
+          padding:'0.75vw 1.66vw 0.66vw',
           position:'relative',
           textAlign:'center',
           textTransform:'none',
@@ -149,23 +147,21 @@ const Caroussel = ({ flashcards }) => {
       <button onClick={handleAddAfterCurrent2}
       style={{
         backgroundColor:'#a2aeb3',
-        borderRadius:'4px',
+        borderRadius:'0.33vw',
         borderStyle:'none',
         boxSizing:'border-box',
         color:'#fff',
         cursor:'pointer',
         display:'inline-block',
         fontfamily:'"Farfetch Basis","Helvetica Neue",Arial,sans-serif',
-        fontSize:'16px',
-        fontWeight:'700',
-        lineHeight:'1.5',
+        fontSize:'1.25vw',
+        fontWeight:'600',
         margin:'1vw',
-        maxWidth:'none',
-        minHeight:'44px',
-        minWidth:'10px',
+        minHeight:'3.66vw',
+        minWidth:'0.86vw',
         outline:'none',
         overflow:'hidden',
-        padding:'9px 20px 8px',
+        padding:'0.75vw 1.66vw 0.66vw',
         position:'relative',
         textAlign:'center',
         textTransform:'none',
@@ -174,24 +170,21 @@ const Caroussel = ({ flashcards }) => {
       <button onClick={handleAddAfterCurrent3}
       style={{
         backgroundColor:'#ff7373',
-        borderRadius:'4px',
+        borderRadius:'0.33vw',
         borderStyle:'none',
-        // boxShadow:'0px 2px 0px 2px rgba(20,20,20,0.2)',
         boxSizing:'border-box',
         color:'#fff',
         cursor:'pointer',
         display:'inline-block',
         fontfamily:'"Farfetch Basis","Helvetica Neue",Arial,sans-serif',
-        fontSize:'16px',
-        fontWeight:'700',
-        lineHeight:'1.5',
+        fontSize:'1.25vw',
+        fontWeight:'600',
         margin:'1vw',
-        maxWidth:'none',
-        minHeight:'44px',
-        minWidth:'10px',
+        minHeight:'3.66vw',
+        minWidth:'0.86vw',
         outline:'none',
         overflow:'hidden',
-        padding:'9px 20px 8px',
+        padding:'0.75vw 1.66vw 0.66vw',
         position:'relative',
         textAlign:'center',
         textTransform:'none',
