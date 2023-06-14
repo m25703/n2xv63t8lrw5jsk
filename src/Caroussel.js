@@ -88,7 +88,7 @@ const Caroussel = ({ flashcards }) => {
       const newCurrentIndex = carouselRef.current.state.selectedItem;
       newArray.splice(newCurrentIndex +1 , 0, currentData);
       setArray(newArray);
-    }, 45000);
+    }, 30000);
   };
 
   return (
