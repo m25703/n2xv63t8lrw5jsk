@@ -46,6 +46,7 @@ const Card = ({ question, answer }) => {
               appearance: 'none',
               backgroundColor: '#000000',
               borderRadius: '2vw',
+              borderStyle: 'none',
               color: '#FFFFFF',
               cursor: 'pointer',
               fontFamily:
