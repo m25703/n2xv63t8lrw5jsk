@@ -101,7 +101,7 @@ const Caroussel = ({ flashcards }) => {
     if(newNormalCards.length!==0) {
     setNormalCards([...normalCards,newNormalCards]);
     }
-    console.log(normalCards);
+    // console.log(normalCards);
     if (newArray.length < 10) {
       const remainingFlashcards = flashcards.filter(
         card => !newArray.includes(card)
@@ -139,7 +139,7 @@ const Caroussel = ({ flashcards }) => {
     if(newDifficultCards.length!==0) {
       setDifficultCards([...difficultCards, newDifficultCards]);
     }
-    console.log(difficultCards);
+    // console.log(difficultCards);
     if (newArray.length < 10) {
       const remainingFlashcards = flashcards.filter(
         card => !newArray.includes(card)
