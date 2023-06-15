@@ -3,6 +3,8 @@ import Caroussel from './Caroussel';
 import Navbar from './Navbar';
 import ReactGA from 'react-ga';
 
+
+
 const App = () => {
     
   // Initialize ReactGA with your tracking ID
