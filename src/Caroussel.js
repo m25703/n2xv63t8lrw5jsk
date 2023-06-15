@@ -89,8 +89,7 @@ const Caroussel = ({ flashcards }) => {
     ReactGA.event({
       category: 'Button Click',
       action: 'Needs Practice Button Clicked',
-      label: 'Current Data',
-      value: currentIndx,
+      label: currentIndx
     });
     const currentIndex = selectedIndex;
     let newArray = [...array];
@@ -127,8 +126,7 @@ const Caroussel = ({ flashcards }) => {
     ReactGA.event({
       category: 'Button Click',
       action: 'Difficult Button Clicked',
-      label: 'Current Data',
-      value: currentIndx,
+      label: currentIndx
     });
     const currentIndex = selectedIndex;
     let newArray = [...array];
