@@ -25,7 +25,7 @@ const Caroussel = ({ flashcards }) => {
     const interval = setInterval(() => {
       setArray(prevArray => [...prevArray, ...difficultCards]);
       setDifficultCards([]);
-    }, 30000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [difficultCards]);
 
@@ -33,21 +33,21 @@ const Caroussel = ({ flashcards }) => {
     const interval = setInterval(() => {
       setArray(prevArray => [...prevArray, ...normalCards]);
       setNormalCards([]);
-    }, 120001);
+    }, 15000);
     return () => clearInterval(interval);
   }, [normalCards]);
 
-  useEffect(() => {
-    // Track card view event
-    ReactGA.event({
-      category: 'Card View',
-      action: 'Card Viewed',
-      label: `Card Index: ${selectedIndex}`,
-    });
+  // useEffect(() => {
+  //   // Track card view event
+  //   ReactGA.event({
+  //     category: 'Card View',
+  //     action: 'Card Viewed',
+  //     label: `Card Index: ${selectedIndex}`,
+  //   });
   
-    // Rest of the useEffect code...
+  //   // Rest of the useEffect code...
   
-  }, [array, selectedIndex]);  
+  // }, [array, selectedIndex]);  
 
   const handleAddAfterCurrent1 = () => {
     const currentIndx = carouselRef.current.state.selectedItem;
@@ -195,8 +195,8 @@ const Caroussel = ({ flashcards }) => {
           cursor:'pointer',
           display:'inline-block',
           fontfamily:'"Farfetch Basis","Helvetica Neue",Arial,sans-serif',
-          fontSize:'1.25vw',
-          fontWeight:'600',
+          fontSize:'2vw',
+          fontWeight:'400',
           margin:'1vw',
           minHeight:'3.66vw',
           minWidth:'0.86vw',
@@ -218,8 +218,8 @@ const Caroussel = ({ flashcards }) => {
         cursor:'pointer',
         display:'inline-block',
         fontfamily:'"Farfetch Basis","Helvetica Neue",Arial,sans-serif',
-        fontSize:'1.25vw',
-        fontWeight:'600',
+        fontSize:'2vw',
+        fontWeight:'400',
         margin:'1vw',
         minHeight:'3.66vw',
         minWidth:'0.86vw',
@@ -241,8 +241,8 @@ const Caroussel = ({ flashcards }) => {
         cursor:'pointer',
         display:'inline-block',
         fontfamily:'"Farfetch Basis","Helvetica Neue",Arial,sans-serif',
-        fontSize:'1.25vw',
-        fontWeight:'600',
+        fontSize:'2vw',
+        fontWeight:'400',
         margin:'1vw',
         minHeight:'3.66vw',
         minWidth:'0.86vw',

@@ -11,30 +11,8 @@ const Navbar = () => {
     <nav style={styles.navbar}>
       <ul style={styles.navbarList}>
         <li style={styles.navbarItem}><a href="/" style={styles.navbarLink}>Home</a> &nbsp;&nbsp;&nbsp;&nbsp;</li> 
-        <li style={styles.navbarItem}><a href="/about" style={styles.navbarLink}>About</a> &nbsp;&nbsp;&nbsp;&nbsp;</li>
         <li style={styles.navbarItem}><a href="/createCard" style={styles.navbarLink}>Create Card</a> &nbsp;&nbsp;&nbsp;&nbsp;</li>
-        <li
-          style={styles.navbarItem}
-          onMouseEnter={handleDropdownToggle}
-          onMouseLeave={handleDropdownToggle}
-        >
-          <a href="/chapters" style={styles.navbarLink}>Select Chapter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          <ul style={{ ...styles.dropdown, display: isDropdownVisible ? 'block' : 'none', color:'white' }}>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter1">CROP PRODUCTION AND MANAGEMENT</a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter2">MICROORGANISMS : FRIEND AND FOE </a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter3">COAL AND PETROLEUM</a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter4">COMBUSTION AND FLAME</a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter5">CONSERVATION OF PLANTS AND ANIMALS</a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter6">REPRODUCTION IN ANIMALS</a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter7">REACHING THE AGE OF ADOLESCENCE</a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter8">FORCE AND PRESSURE</a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter9">FRICTION</a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter10">SOUND</a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter11">CHEMICAL EFFECTS OF ELECTRIC CURRENT</a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter12">SOME NATURAL PHENOMENA</a></li>
-            <li><a style={{color:'white', textDecoration:'none'}} href="/chapters/chapter13">LIGHT</a></li>
-          </ul>
-        </li>
+        <li style={styles.navbarItem}><a href="/createCard" style={styles.navbarLink}> Options&nbsp; </a> &nbsp;&nbsp;&nbsp;&nbsp;</li>
       </ul>
     </nav>
   );

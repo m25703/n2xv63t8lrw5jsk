@@ -14,12 +14,12 @@ const Card = ({ question, answer }) => {
           className="card-question"
           style={{
             marginTop: '1vw',
-            height: '5vw',
+            height: '8vw',
             textAlign: 'center',
             color: 'white',
             fontFamily:
               'Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
-            fontSize: '2vw',
+            fontSize: '3vw',
             fontWeight: '600'
           }}
         >
@@ -27,13 +27,13 @@ const Card = ({ question, answer }) => {
         </div>
         <div
           style={{
-            height: '14vw',
+            height: '10.5vw',
             width: '80%',
             textAlign: 'center',
             verticalAlign: 'middle',
             fontFamily:
               'Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
-            fontSize: '2vw'
+            fontSize: '3vw'
           }}
         >
           {showAnswer && <div className="card-answer" style={{verticalAlign: 'middle'}}>{answer}</div>}
@@ -51,7 +51,7 @@ const Card = ({ question, answer }) => {
               cursor: 'pointer',
               fontFamily:
                 'Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
-              fontSize: '1.2vw',
+              fontSize: '2vw',
               lineHeight: 'normal',
               minHeight: '3vw',
               minWidth: '0',
