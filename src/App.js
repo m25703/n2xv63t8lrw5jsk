@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
 const App = () => {
     
   // Initialize ReactGA with your tracking ID
-  ReactGA.initialize('YOUR_TRACKING_ID');
+  ReactGA.initialize('G-N5PJR8TNEF');
   const flashcards = [
     { question: "What happens when magnesium burns in air?", answer: "It forms magnesium oxide and produces heat and light."},
     { question: "What is produced when coal burns in air?", answer: "It produces carbon dioxide, heat, and light."},
