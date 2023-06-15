@@ -52,22 +52,20 @@ const Caroussel = ({ flashcards }) => {
   const handleAddAfterCurrent1 = () => {
     const currentIndx = carouselRef.current.state.selectedItem;
     const currentData = array[currentIndx];
-    ReactGA.event({
-      category: 'Button Click',
-      action: 'Easy Button Clicked',
-      label: 'Current Data',
-      value: currentIndx,
-    });
-    // const currentIndex = selectedIndex;
-    // const newArray = [...array];
-    // setSelectedIndex(currentIndex+1);
+    // ReactGA.event({
+    //   category: 'Button Click',
+    //   action: 'Easy Button Clicked',
+    //   label: 'Current Data',
+    //   value: currentIndx,
+    // });
+    const currentIndex = selectedIndex;
+    const newArray = [...array];
+    setSelectedIndex(currentIndex+1);
     // setTimeout(() => {
     //   const newCurrentIndex = carouselRef.current.state.selectedItem;
     //   newArray.splice(newCurrentIndex +1 , 0, currentData);
     //   setArray(newArray);
     // }, 5000);
-    const currentIndex = selectedIndex;
-    let newArray = [...array];
 
     if (newArray.length < 5) {
       const remainingFlashcards = flashcards.filter(
@@ -86,11 +84,11 @@ const Caroussel = ({ flashcards }) => {
   const handleAddAfterCurrent2 = () => {
     const currentIndx = carouselRef.current.state.selectedItem;
     const currentData = array[currentIndx];
-    ReactGA.event({
-      category: 'Button Click',
-      action: 'Needs Practice Button Clicked',
-      label: currentIndx
-    });
+    // ReactGA.event({
+    //   category: 'Button Click',
+    //   action: 'Needs Practice Button Clicked',
+    //   label: currentIndx
+    // });
     const currentIndex = selectedIndex;
     let newArray = [...array];
     setNewNormalCards([]);
@@ -112,11 +110,11 @@ const Caroussel = ({ flashcards }) => {
     }
 
     setSelectedIndex(currentIndex+1);
-    // setTimeout(() => {
-    //   const newCurrentIndex = carouselRef.current.state.selectedItem;
-    //   newArray.splice(newCurrentIndex +1 , 0, currentData);
-    //   setArray(newArray);
-    // }, 120000);
+    setTimeout(() => {
+      const newCurrentIndex = carouselRef.current.state.selectedItem;
+      newArray.splice(newCurrentIndex +1 , 0, currentData);
+      setArray(newArray);
+    }, 10000);
   };
 
   
@@ -148,11 +146,11 @@ const Caroussel = ({ flashcards }) => {
       setArray(newArray);
     }
     setSelectedIndex(currentIndex+1);
-    // setTimeout(() => {
-    //   const newCurrentIndex = carouselRef.current.state.selectedItem;
-    //   newArray.splice(newCurrentIndex +1 , 0, currentData);
-    //   setArray(newArray);
-    // }, 30000);
+    setTimeout(() => {
+      const newCurrentIndex = carouselRef.current.state.selectedItem;
+      newArray.splice(newCurrentIndex +1 , 0, currentData);
+      setArray(newArray);
+    }, 5000);
   };
 
   return (
