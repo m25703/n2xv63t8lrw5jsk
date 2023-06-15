@@ -56,7 +56,7 @@ const Caroussel = ({ flashcards }) => {
       category: 'Button Click',
       action: 'Easy Button Clicked',
       label: 'Current Data',
-      value: currentData,
+      value: currentIndx,
     });
     // const currentIndex = selectedIndex;
     // const newArray = [...array];
@@ -90,7 +90,7 @@ const Caroussel = ({ flashcards }) => {
       category: 'Button Click',
       action: 'Needs Practice Button Clicked',
       label: 'Current Data',
-      value: currentData,
+      value: currentIndx,
     });
     const currentIndex = selectedIndex;
     let newArray = [...array];
@@ -128,7 +128,7 @@ const Caroussel = ({ flashcards }) => {
       category: 'Button Click',
       action: 'Difficult Button Clicked',
       label: 'Current Data',
-      value: currentData,
+      value: currentIndx,
     });
     const currentIndex = selectedIndex;
     let newArray = [...array];
