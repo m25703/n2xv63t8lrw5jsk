@@ -279,7 +279,7 @@ const AnkiCarousel = ({flashcards}) => {
     const currentData = array[currentIndex];
     const newArray = [...array];
     setTimeout(() => {
-      console.log(carouselRef.current);
+      // console.log(carouselRef.current);
       const newCurrentIndex = carouselRef.current.state.selectedItem;
       newArray.splice(newCurrentIndex + 1, 0, currentData);
       setArray(newArray);

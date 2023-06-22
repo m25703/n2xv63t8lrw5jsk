@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Card from './Card';
-import ReactGA from 'react-ga';
 
 
 
@@ -37,29 +36,10 @@ const Caroussel = ({ flashcards }) => {
     return () => clearInterval(interval);
   }, [normalCards]);
 
-  // useEffect(() => {
-  //   // Track card view event
-  //   ReactGA.event({
-  //     category: 'Card View',
-  //     action: 'Card Viewed',
-  //     label: `Card Index: ${selectedIndex}`,
-  //   });
-  
-  //   // Rest of the useEffect code...
-  
-  // }, [array, selectedIndex]);  
 
   const handleAddAfterCurrent1 = () => {
-    const currentIndx = carouselRef.current.state.selectedItem;
-    const currentData = array[currentIndx];
-    // ReactGA.event({
-    //   category: 'Button Click',
-    //   action: 'Easy Button Clicked',
-    //   label: 'Current Data',
-    //   value: currentIndx,
-    // });
     const currentIndex = selectedIndex;
-    const newArray = [...array];
+    let newArray = [...array];
     setSelectedIndex(currentIndex+1);
     // setTimeout(() => {
     //   const newCurrentIndex = carouselRef.current.state.selectedItem;
@@ -84,11 +64,6 @@ const Caroussel = ({ flashcards }) => {
   const handleAddAfterCurrent2 = () => {
     const currentIndx = carouselRef.current.state.selectedItem;
     const currentData = array[currentIndx];
-    // ReactGA.event({
-    //   category: 'Button Click',
-    //   action: 'Needs Practice Button Clicked',
-    //   label: currentIndx
-    // });
     const currentIndex = selectedIndex;
     let newArray = [...array];
     setNewNormalCards([]);
@@ -116,16 +91,10 @@ const Caroussel = ({ flashcards }) => {
       setArray(newArray);
     }, 10000);
   };
-
   
   const handleAddAfterCurrent3 = () => {
     const currentIndx = carouselRef.current.state.selectedItem;
     const currentData = array[currentIndx];
-    ReactGA.event({
-      category: 'Button Click',
-      action: 'Difficult Button Clicked',
-      label: currentIndx
-    });
     const currentIndex = selectedIndex;
     let newArray = [...array];
     setNewDifficultCards([]);
